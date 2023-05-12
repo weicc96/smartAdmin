@@ -1,0 +1,17 @@
+<!--
+  * iframe 组件
+  * 
+  * @Author:    weicc 
+  * @Date:      2022-09-01 23:14:49 
+  * @Wechat:    wcchen96 
+  * @Email:     15793730318@163.com 
+-->
+<template>
+  <iframe :id="name" :src="url" frameborder="0" height="800" scrolling="yes" width="100%"></iframe>
+</template>
+<script setup>
+  let props = defineProps({
+    name: String,
+    url: String,
+  });
+</script>
